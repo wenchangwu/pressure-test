@@ -21,7 +21,7 @@ import org.springframework.context.annotation.Configuration;
 public class MposProducerConfig {
 
 
-    @Bean("kafkaProducerPropertiesOne")
+    @Bean("kafkaProducerPropertiesTwo")
     @ConfigurationProperties("kafka.producer.mpos")
     public KafkaProducerProperties kafkaProducerProperties() {
         return KafkaProducerBuilder.create().build();

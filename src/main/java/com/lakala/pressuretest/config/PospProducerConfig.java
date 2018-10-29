@@ -27,7 +27,7 @@ public class PospProducerConfig {
         return KafkaProducerBuilder.create().build();
     }
 
-    @Bean("mposProducerFactoryBean")
+    @Bean("pospProducerFactoryBean")
     public MQProducerFactoryBean mqProducerFactoryBean() throws Exception {
         return new MQProducerFactoryBean(kafkaProducerProperties().getConfigFile(),
                 kafkaProducerProperties().getTopic());
